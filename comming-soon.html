@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+<link rel="stylesheet" href="comming-soon.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .coming-soon-container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: white;
+      padding-top: 20%;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+    .countdown-timer {
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="37845-415200790_tiny.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="coming-soon-container">
+    <h1>We Are Launching Soon!</h1>
+    <p>Stay tuned for something amazing. We're working hard to deliver the best experience for you.</p>
+    <div class="countdown-timer">
+      <p>00 Days : 00 Hours : 00 Minutes : 00 Seconds</p>
+    </div>
+  </div>
+</body>
+</html>
